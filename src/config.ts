@@ -2,13 +2,13 @@ import { ConfigModule, registerAs } from '@nestjs/config';
 
 export interface AppConfig {
   rmqUrl: string;
-  userServiceQueue: string;
+  serviceUserQueue: string;
 }
 
 const AppConfig = registerAs<AppConfig>('appConfig', () => {
   return {
     rmqUrl: process.env.RMQ_URL,
-    userServiceQueue: process.env.USER_SERVICE_QUEUE,
+    serviceUserQueue: process.env.SERVICE_USER_QUEUE,
   };
 });
 

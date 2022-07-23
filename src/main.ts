@@ -12,7 +12,7 @@ async function bootstrap() {
     transport: Transport.RMQ,
     options: {
       urls: [configService.rmqUrl],
-      queue: configService.userServiceQueue,
+      queue: configService.serviceUserQueue,
     },
   });
 

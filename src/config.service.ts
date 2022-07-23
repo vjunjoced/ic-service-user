@@ -9,7 +9,7 @@ export class AppConfigService {
     return this.configService.get('appConfig.rmqUrl');
   }
 
-  get userServiceQueue(): string {
-    return this.configService.get('appConfig.userServiceQueue');
+  get serviceUserQueue(): string {
+    return this.configService.get('appConfig.serviceUserQueue');
   }
 }
